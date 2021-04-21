@@ -1,10 +1,10 @@
 import Thumbnail from "./Thumbnail";
 
-function Results({ requests }) {
+function Results({ results }) {
   return (
     <div>
-      {requests.map((result) => (
-        <Thumbnailbnail />
+      {results.map((result) => (
+        <Thumbnail key={result.id} result={result} />
       ))}
     </div>
   );
